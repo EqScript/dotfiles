@@ -25,7 +25,7 @@ font pango:AvageNerdFont Mono 14
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg ~/Pictures/Wallpapers/colorful-pick-near-guitar.jpg fill
+output * bg ~/dotfiles/sway/wallpapers/stay_positive.jpg fill
 #
 # Example configuration:
 #
