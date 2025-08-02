@@ -117,6 +117,41 @@ source $ZSH/oh-my-zsh.sh
 # Clear console
 alias c="clear"
 
+# Suspend
+alias sus="systemctl suspend"
+
+# Lazygit
+alias lg="lazygit"
+
+# cd to cantera_electric project
+alias ce="cd ~/Cadwork/KiCad/projects/cantera_electric/"
+
+# SSH-ADD 
+alias sshgit="ssh-add ~/.ssh/mi_fedora_git_key"
+
+# boat2base server login
+alias b2b="ssh-add ~/.ssh/mi_digitalocean_key && ssh deploy@206.189.145.254" 
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+### *************** SSH Agent environment ******************
+SSH_ENV="$HOME/.ssh/agent-environment"
+
+start_agent() {
+    eval "$(ssh-agent -s)" > "$SSH_ENV"
+    chmod 600 "$SSH_ENV"
+}
+
+if [ -f "$SSH_ENV" ]; then
+    source "$SSH_ENV" > /dev/null 2>&1
+    if [[ -n "$SSH_AGENT_PID" ]] && ps -p "$SSH_AGENT_PID" > /dev/null 2>&1; then
+        :  # Agent is running; do nothing
+    else
+        start_agent
+    fi
+else
+    start_agent
+fi
+### **************** END SSH Agent **************************
+

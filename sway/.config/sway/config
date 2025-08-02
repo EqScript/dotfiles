@@ -19,10 +19,13 @@ set $term foot
 set $menu wofi --show drun --style ~/.config/wofi/style.css --width=500 --height=400
 
 
+### Fonts and UI
+font pango:AvageNerdFont Mono 14
+
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
+output * bg ~/Pictures/Wallpapers/colorful-pick-near-guitar.jpg fill
 #
 # Example configuration:
 #
@@ -249,6 +252,9 @@ bindsym Mod4+z exec flatpak run app.zen_browser.zen
 
 # Telegram Desktop
 bindsym Mod4+t  exec flatpak run org.telegram.desktop
+
+# Screenshot of an Area
+bindsym Ctrl+Mod1+s exec sh -c 'grim -g "$(slurp)" - | wl-copy'
 
 # Wayybar
 exec waybar
