@@ -11,9 +11,13 @@ fi
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
-
 # Path to local bin 
 export PATH="$PATH:$HOME/.local/bin/"
+
+# Set the GOPATH to your home directory
+export GOPATH=$HOME/go
+# Add the Go bin directory to your PATH
+export PATH=$PATH:$GOPATH/bin
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time Oh My Zsh is loaded, in which case,
@@ -131,6 +135,13 @@ alias sshgit="ssh-add ~/.ssh/mi_fedora_git_key"
 
 # boat2base server login
 alias b2b="ssh-add ~/.ssh/mi_digitalocean_key && ssh deploy@206.189.145.254" 
+
+# tio ACM0, USB0
+alias acm0="tio /dev/ttyACM0 | logalize"
+alias usb0="tio /dev/ttyUSB0 | logalize"
+
+# zoxide - better cd
+eval "$(zoxide init zsh)"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
