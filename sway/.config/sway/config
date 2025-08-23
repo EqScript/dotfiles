@@ -24,9 +24,10 @@ font pango:AvageNerdFont Mono 14
 
 ### Output configuration
 #
-# Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg ~/dotfiles/sway/wallpapers/stay_positive.jpg fill
-#
+# A random wallpaper picker script
+exec ~/dotfiles/sway/wallpapers/random-wallpaper.sh
+
+
 # Example configuration:
 #
 #   output HDMI-A-1 resolution 1920x1080 position 1920,0
@@ -161,7 +162,7 @@ input "type:keyboard" {
     bindsym $mod+v splitv
 
     # Switch the current container between different layout styles
-    bindsym $mod+s layout stacking
+    # bindsym $mod+s layout stacking # remapped to Suspend
     bindsym $mod+w layout tabbed
     bindsym $mod+e layout toggle split
 
@@ -256,6 +257,10 @@ bindsym Mod4+t  exec flatpak run org.telegram.desktop
 
 # Screenshot of an Area
 bindsym Ctrl+Mod1+s exec sh -c 'grim -g "$(slurp)" - | wl-copy'
+
+# suspend
+bindsym Mod4+s exec systemctl suspend
+
 
 # Wayybar
 exec waybar
