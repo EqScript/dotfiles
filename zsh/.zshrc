@@ -19,6 +19,9 @@ export GOPATH=$HOME/go
 # Add the Go bin directory to your PATH
 export PATH=$PATH:$GOPATH/bin
 
+# DSView
+export PATH="$PATH:/usr/local/bin"
+
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time Oh My Zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -166,3 +169,4 @@ else
 fi
 ### **************** END SSH Agent **************************
 
+export PROTOC=/usr/bin/protoc

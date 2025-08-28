@@ -258,6 +258,9 @@ bindsym Mod4+t  exec flatpak run org.telegram.desktop
 # Screenshot of an Area
 bindsym Ctrl+Mod1+s exec sh -c 'grim -g "$(slurp)" - | wl-copy'
 
+# Termusic player
+bindsym Mod4+m exec foot /home/sergio/.cargo/bin/termusic
+
 # suspend
 bindsym Mod4+s exec systemctl suspend
 
