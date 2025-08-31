@@ -1,0 +1,30 @@
+-- ~/.config/nvim/lua/plugins/colorscheme.lua
+return {
+    -- 1) Catppuccin first, eagerly, with integrations
+    {
+        "catppuccin/nvim",
+        name = "catppuccin",
+        priority = 1000, -- load before other UI plugins
+        lazy = false,
+        opts = {
+            flavour = "mocha", -- or "macchiato", "frappe", "latte"
+            integrations = {
+                bufferline = true,
+                treesitter = true,
+                cmp = true,
+                gitsigns = true,
+                telescope = { enabled = true },
+                which_key = true,
+                -- add others you use
+            },
+        },
+    },
+
+    -- 2) Tell LazyVim to use the catppuccin colorscheme
+    {
+        "LazyVim/LazyVim",
+        opts = {
+            colorscheme = "catppuccin",
+        },
+    },
+}

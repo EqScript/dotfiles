@@ -270,3 +270,20 @@ exec waybar
 
 # Mako
 exec mako
+
+# Increase mouse scroll speed
+input "9639:64112:Compx_2.4G_Wireless_Receiver_Mouse" {
+    scroll_factor 1.5
+}
+
+input "9639:64097:Compx_2.4G_Receiver_Mouse" {
+    scroll_factor 1.5
+}
+
+input "1267:12856:ELAN2310:00_04F3:3238_Touchpad" {
+    scroll_factor 1.5
+}
+
+input "1267:12856:ELAN2310:00_04F3:3238_Mouse" {
+    scroll_factor 1.5
+}

@@ -146,6 +146,16 @@ alias usb0="tio /dev/ttyUSB0 | logalize"
 # zoxide - better cd
 eval "$(zoxide init zsh)"
 
+# Gemini CLI update command
+alias gemini-update="sudo npm install -g @google/gemini-cli@latest" 
+
+# New wallpapers - stay
+alias wallpaper="exec ~/dotfiles/sway/wallpapers/random-wallpaper.sh"
+
+# yazi
+alias ya="yazi"
+
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
