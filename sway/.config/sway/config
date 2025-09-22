@@ -72,8 +72,16 @@ input "type:keyboard" {
     xkb_options grp:ctrl_space_toggle
 }
 
+# Windows style
+gaps inner 0
+gaps outer 0
+default_border pixel 2
 
-
+# Colors                 Border   Bgr    Text  Indicator
+client.focused          #b0c4de #268bd2 #f5f5f5 #268bd2
+client.focused_inactive #333333 #333333 #f5f5f5 #333333
+client.unfocused        #222222 #222222 #888888 #222222
+client.urgent           #d33682 #d33682 #ffffff #d33682
 
 ### Key bindings
 #
@@ -159,7 +167,7 @@ input "type:keyboard" {
     # $mod+b or $mod+v, for horizontal and vertical splits
     # respectively.
     bindsym $mod+b splith
-    bindsym $mod+v splitv
+    bindsym $mod+Shift+v splitv
 
     # Switch the current container between different layout styles
     # bindsym $mod+s layout stacking # remapped to Suspend
@@ -260,6 +268,9 @@ bindsym Ctrl+Mod1+s exec sh -c 'grim -g "$(slurp)" - | wl-copy'
 
 # Termusic player
 bindsym Mod4+m exec foot /home/sergio/.cargo/bin/termusic
+
+# VS Code
+bindsym Mod4+v exec code
 
 # suspend
 bindsym Mod4+s exec systemctl suspend
