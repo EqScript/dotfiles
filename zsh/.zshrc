@@ -1,6 +1,4 @@
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc. Initialization code that may require console input (password prompts, [y/n] confirmations, etc.) must go above this block; everything else may go below.
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
@@ -11,20 +9,15 @@ fi
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
-# Path to local bin 
-export PATH="$PATH:$HOME/.local/bin/"
 
-# Set the GOPATH to your home directory
-export GOPATH=$HOME/go
-# Add the Go bin directory to your PATH
-export PATH=$PATH:$GOPATH/bin
+export PATH="$HOME/.local/bin:$HOME/go/bin:/usr/local/bin:$HOME/.cargo/bin:/usr/bin"
 
-# DSView
-export PATH="$PATH:/usr/local/bin"
+# Global editor
+export EDITOR=hx
 
-# Cargo
-export PATH="$PATH:/home/sergio/.cargo/bin"
-
+# Python 3.11 for PIO
+export PLATFORMIO_IDE_PYTHON=/usr/bin/python3.11
+ 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time Oh My Zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -186,3 +179,4 @@ fi
 ### **************** END SSH Agent **************************
 
 export PROTOC=/usr/bin/protoc
+export LANG=en_US.UTF-8

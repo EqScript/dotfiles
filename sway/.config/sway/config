@@ -263,7 +263,7 @@ include /etc/sway/config.d/*
 ### Starting apps
 
 # Launch Zen Browser in the next unused workspace
-bindsym Mod4+z exec flatpak run app.zen_browser.zen
+bindsym Mod4+z exec zen-browser
 
 # Telegram Desktop
 bindsym Mod4+t  exec flatpak run org.telegram.desktop
