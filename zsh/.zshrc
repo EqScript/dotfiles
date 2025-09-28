@@ -22,11 +22,17 @@ export PATH=$PATH:$GOPATH/bin
 # DSView
 export PATH="$PATH:/usr/local/bin"
 
+# Cargo
+export PATH="$PATH:/home/sergio/.cargo/bin"
+
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time Oh My Zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="powerlevel10k/powerlevel10k"
+
+# Default zsh theme
+#ZSH_THEME="robbyrussell"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load

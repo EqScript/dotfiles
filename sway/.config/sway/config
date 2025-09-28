@@ -4,6 +4,11 @@
 #
 # Read `man 5 sway` for a complete reference.
 
+#export XDG_SESSION_TYPE=wayland
+#export XDG_CURRENT_DESKTOP=sway
+#export GTK_USE_PORTAL=1
+
+
 ### Variables
 #
 # Logo key. Use Mod1 for Alt.
@@ -273,8 +278,7 @@ bindsym Mod4+m exec foot /home/sergio/.cargo/bin/termusic
 bindsym Mod4+v exec code
 
 # suspend
-bindsym Mod4+s exec systemctl suspend
-
+bindsym Mod4+s exec systemctl hibernate
 
 # Wayybar
 exec waybar

@@ -1,2 +1,6 @@
+
+# Colors
 theme = "adwaita-dark"
 
+[editor]
+line-number = "relative"
