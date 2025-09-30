@@ -139,8 +139,8 @@ alias sshgit="ssh-add ~/.ssh/mi_fedora_git_key"
 alias b2b="ssh-add ~/.ssh/mi_digitalocean_key && ssh deploy@206.189.145.254" 
 
 # tio ACM0, USB0
-alias acm0="tio /dev/ttyACM0 | logalize"
-alias usb0="tio /dev/ttyUSB0 | logalize"
+alias acm0="tio /dev/ttyACM0 | logalize --theme ecu --no-builtins"
+alias usb0="tio /dev/ttyUSB0 | logalize --theme ecu --no-builtins"
 
 # zoxide - better cd
 eval "$(zoxide init zsh)"
@@ -180,3 +180,4 @@ fi
 
 export PROTOC=/usr/bin/protoc
 export LANG=en_US.UTF-8
+alias telem='grc -c ~/.grc/telemetry.conf cat'
