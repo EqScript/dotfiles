@@ -154,6 +154,8 @@ alias wallpaper="exec ~/dotfiles/sway/wallpapers/random-wallpaper.sh"
 # yazi
 alias ya="yazi"
 
+# Mounting USB Drive 2TB
+alias mnt2tb="sudo mount /dev/sdd1 /run/media/sergio/SERGIO2TB" 
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

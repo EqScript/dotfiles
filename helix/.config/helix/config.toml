@@ -1,6 +1,6 @@
 
 # Colors
-theme = "adwaita-dark"
+theme = "gruvbox"
 
 [editor]
 line-number = "relative"
