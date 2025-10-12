@@ -32,7 +32,7 @@ alias ncfg='sudoedit /etc/nixos/configuration.nix'
 alias sg='ssh-add ~/.ssh/mi-nix-git'
 
 # Custom scripts
-alias wppr='~/dotfiles/sway/wallpapers/random-wallpaper.sh'
+alias wppr='~/.config/sway/wallpapers/random-wallpaper.sh'
 
 # Starting ssh-agent if not already running
 if [ -z "$SSH_AUTH_SOCK" ]; then
