@@ -1,0 +1,41 @@
+eval "$(starship init bash)"
+eval "$(zoxide init bash)"
+
+export EDITOR=hx
+
+# Aliases
+# This file edit
+alias hb='hx ~/.bashrc'
+
+# Navigation
+alias ..='cd ..'
+alias ...='cd ../..'
+
+# Git
+alias gst='git status'
+alias ga='git add'
+alias gc='git commit -m'
+alias gp='git push'
+
+# System
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+alias shnow='shutdown now'
+alias swaylo='swaymsg exit'
+
+# Package ops
+alias nrs='sudo nixos-rebuild switch'
+alias ncfg='sudoedit /etc/nixos/configuration.nix'
+
+# ssh-add git
+alias sg='ssh-add ~/.ssh/mi-nix-git'
+
+# Custom scripts
+alias wppr='~/dotfiles/sway/wallpapers/random-wallpaper.sh'
+
+# Starting ssh-agent if not already running
+if [ -z "$SSH_AUTH_SOCK" ]; then
+    eval "$(ssh-agent -s | grep -v '^echo Agent pid')"
+fi
+

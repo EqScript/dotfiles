@@ -1,13 +1,4 @@
-# Default config for sway
-#
-# Copy this to ~/.config/sway/config and edit it to your liking.
-#
-# Read `man 5 sway` for a complete reference.
-
-#export XDG_SESSION_TYPE=wayland
-#export XDG_CURRENT_DESKTOP=sway
-#export GTK_USE_PORTAL=1
-
+# ~/.config/sway/config
 
 ### Variables
 #
@@ -27,27 +18,43 @@ set $menu wofi --show drun --style ~/.config/wofi/style.css --width=500 --height
 ### Fonts and UI
 font pango:AvageNerdFont Mono 14
 
+
 ### Output configuration
-#
-# A random wallpaper picker script
-exec ~/dotfiles/sway/wallpapers/random-wallpaper.sh
-
-
 # Example configuration:
 #
 #   output HDMI-A-1 resolution 1920x1080 position 1920,0
 #
 # You can get the names of your outputs by running: swaymsg -t get_outputs
+output * disable
 
-output eDP-1 pos 0 0
-output DP-1 pos 1440 0
+output eDP-1 enable
+output eDP-1 resolution 2880x1800 position 0,0
 
+# output DP-2 enable
+# output DP-2 resolution 3440x1440 position 2880,0
+
+# Using dynamic display env instead
+exec ~/.config/sway/display_dyn_cfg.sh
+
+# Logging disdplay outputs
+exec swaymsg -t get_outputs > ~/.config/sway/display_log.txt
+
+
+### Cursor theme
+seat seat0 xcursor_theme capitaine-cursors 24
+
+
+### Workspaces Layout
 workspace 1 output eDP-1
 workspace 2 output eDP-1
-workspace 3 output DP-1
-workspace 4 output DP-1
-workspace 5 output DP-1
-workspace 6 output DP-1
+workspace 3 output DP-2
+workspace 4 output DP-2
+workspace 5 output DP-2
+workspace 6 output DP-2
+
+
+# A random wallpaper picker script
+exec ~/dotfiles/sway/wallpapers/random-wallpaper.sh
 
 
 ### Idle configuration
@@ -78,12 +85,13 @@ input "type:keyboard" {
 }
 
 # Windows style
-gaps inner 0
-gaps outer 0
+gaps inner 4
+gaps outer 4
 default_border pixel 2
+corner_radius 8
 
 # Colors                 Border   Bgr    Text  Indicator
-client.focused          #b0c4de #268bd2 #f5f5f5 #268bd2
+client.focused          #4a5a6a #4a5a6a #f5f5f5 #4a5a6a
 client.focused_inactive #333333 #333333 #f5f5f5 #333333
 client.unfocused        #222222 #222222 #888888 #222222
 client.urgent           #d33682 #d33682 #ffffff #d33682
