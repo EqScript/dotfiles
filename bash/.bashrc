@@ -1,6 +1,5 @@
-eval "$(starship init bash)"
-eval "$(zoxide init bash)"
 
+# Environment variables
 export EDITOR=hx
 export STARSHIP_CONFIG="/home/sergio/.config/starship/starship.toml"
 export PATH="$HOME/.npm-global/bin:$PATH"
@@ -17,9 +16,11 @@ alias ...='cd ../..'
 
 # Git
 alias gst='git status'
+alias gl='git pull'
 alias ga='git add'
 alias gc='git commit -m'
 alias gp='ssh-add ~/.ssh/mi-nix-git && git push'
+alias gs='git switch'
 
 # System
 alias ll='ls -alF'
@@ -27,6 +28,7 @@ alias la='ls -A'
 alias l='ls -CF'
 alias shtdn='shutdown now'
 alias swaylo='swaymsg exit'
+alias sus='systemctl suspend'
 
 # Package ops
 alias nrs='sudo nixos-rebuild switch'
@@ -43,3 +45,8 @@ if [ -z "$SSH_AUTH_SOCK" ]; then
     eval "$(ssh-agent -s | grep -v '^echo Agent pid')"
 fi
 
+_zoxide_starship_init() {
+    eval "$(starship init bash)"
+    eval "$(zoxide init bash)"
+}
+_zoxide_starship_init
