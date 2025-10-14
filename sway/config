@@ -43,6 +43,8 @@ exec swaymsg -t get_outputs > ~/.config/sway/display_log.txt
 ### Cursor theme
 seat seat0 xcursor_theme capitaine-cursors 24
 
+# Mouse goes across WS
+focus_follows_mouse yes
 
 ### Workspaces Layout
 workspace 1 output eDP-1
@@ -91,8 +93,8 @@ default_border pixel 2
 corner_radius 8
 
 # Colors                 Border   Bgr    Text  Indicator
-client.focused          #4a5a6a #4a5a6a #f5f5f5 #4a5a6a
-client.focused_inactive #333333 #333333 #f5f5f5 #333333
+client.focused          #7800b3 #4a5a6a #f5f5f5 #4a5a6a
+client.focused_inactive #7800b3 #333333 #f5f5f5 #333333
 client.unfocused        #222222 #222222 #888888 #222222
 client.urgent           #d33682 #d33682 #ffffff #d33682
 

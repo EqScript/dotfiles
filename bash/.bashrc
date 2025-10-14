@@ -2,6 +2,10 @@ eval "$(starship init bash)"
 eval "$(zoxide init bash)"
 
 export EDITOR=hx
+export STARSHIP_CONFIG="/home/sergio/.config/starship/starship.toml"
+export PATH="$HOME/.npm-global/bin:$PATH"
+
+
 
 # Aliases
 # This file edit
@@ -15,13 +19,13 @@ alias ...='cd ../..'
 alias gst='git status'
 alias ga='git add'
 alias gc='git commit -m'
-alias gp='git push'
+alias gp='ssh-add ~/.ssh/mi-nix-git && git push'
 
 # System
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
-alias shnow='shutdown now'
+alias shtdn='shutdown now'
 alias swaylo='swaymsg exit'
 
 # Package ops
