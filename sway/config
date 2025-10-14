@@ -312,3 +312,12 @@ input "1267:12856:ELAN2310:00_04F3:3238_Touchpad" {
 input "1267:12856:ELAN2310:00_04F3:3238_Mouse" {
     scroll_factor 1.5
 }
+
+# Tide Times window
+for_window [app_id="tide-widget"] \
+  floating enable, \
+  border none, \
+  move position 60 5, \
+  resize set 240 260
+exec foot --app-id tide-widget -e python3 ~/.config/sway/scripts/tides_cli.py
+
