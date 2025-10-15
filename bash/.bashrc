@@ -23,6 +23,7 @@ alias gp='ssh-add ~/.ssh/mi-nix-git && git push'
 alias gs='git switch'
 
 # System
+alias c='clear'
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
