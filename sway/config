@@ -288,7 +288,7 @@ bindsym Mod4+m exec foot /home/sergio/.cargo/bin/termusic
 bindsym Mod4+v exec code
 
 # suspend
-bindsym Mod4+s exec systemctl hibernate
+bindsym Mod4+s exec systemctl suspend 
 
 # Wayybar
 exec waybar

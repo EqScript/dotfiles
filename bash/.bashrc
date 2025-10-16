@@ -17,7 +17,7 @@ alias ...='cd ../..'
 # Git
 alias gst='git status'
 alias gl='git pull'
-alias ga='git add'
+alias ga='git add .'
 alias gc='git commit -m'
 alias gp='ssh-add ~/.ssh/mi-nix-git && git push'
 alias gs='git switch'
@@ -30,6 +30,10 @@ alias l='ls -CF'
 alias shtdn='shutdown now'
 alias swaylo='swaymsg exit'
 alias sus='systemctl suspend'
+
+# User apps and shortcuts
+alias ya='yazi'
+alias sbrc='source ~/.bashrc'
 
 # Package ops
 alias nrs='sudo nixos-rebuild switch'
