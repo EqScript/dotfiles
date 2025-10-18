@@ -30,10 +30,13 @@ alias l='ls -CF'
 alias shtdn='shutdown now'
 alias swaylo='swaymsg exit'
 alias sus='systemctl suspend'
+alias rm='trash -v'
 
 # User apps and shortcuts
 alias ya='yazi'
-alias sbrc='source ~/.bashrc'
+alias sourcebrc='source ~/.bashrc'
+alias tg='nohup Telegram > /dev/null 2>&1 &'
+alias usb0='grc -c ~/.config/grc/ecu.conf tio /dev/ttyUSB0'
 
 # Package ops
 alias nrs='sudo nixos-rebuild switch'

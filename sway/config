@@ -58,6 +58,9 @@ workspace 6 output DP-2
 # A random wallpaper picker script
 exec ~/dotfiles/sway/wallpapers/random-wallpaper.sh
 
+# udiskie drives automointing
+exec udiskie --smart-tray --no-config
+
 
 ### Idle configuration
 exec swayidle -w \
@@ -272,23 +275,23 @@ include /etc/sway/config.d/*
 
 ### Starting apps
 
-# Launch Zen Browser in the next unused workspace
-bindsym Mod4+z exec zen-browser
+# Launch Firefox in the current workspace
+bindsym $mod+z exec firefox
 
 # Telegram Desktop
-bindsym Mod4+t  exec flatpak run org.telegram.desktop
+bindsym $mod+t  exec Telegram
 
 # Screenshot of an Area
 bindsym Ctrl+Mod1+s exec sh -c 'grim -g "$(slurp)" - | wl-copy'
 
 # Termusic player
-bindsym Mod4+m exec foot /home/sergio/.cargo/bin/termusic
+bindsym $mod+m exec foot /home/sergio/.cargo/bin/termusic
 
 # VS Code
-bindsym Mod4+v exec code
+bindsym $mod+v exec code
 
 # suspend
-bindsym Mod4+s exec systemctl suspend 
+bindsym $mod+s exec systemctl suspend 
 
 # Wayybar
 exec waybar
