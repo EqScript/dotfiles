@@ -1,0 +1,60 @@
+# .bashrc
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+    . /etc/bashrc
+fi
+
+# User specific environment
+for dir in "$HOME/.cargo/bin" "$HOME/.local/bin" "$HOME/bin"; do
+    case ":$PATH:" in
+        *":$dir:"*) ;; # already in PATH
+        *) PATH="$dir:$PATH" ;;
+    esac
+done
+export PATH
+
+# Starship
+export STARSHIP_CONFIG=~/.config/starship/starship_pastel.toml.toml
+
+# System Editor
+export EDITOR=nvim
+
+# Utilities
+alias zz='z ..'
+alias ya='yazi'
+alias la='ls -lha'
+
+# Git
+alias ga='git add .'
+alias gc='git commit -m'
+alias gst='git status'
+alias gl='git pull'
+alias gp='git push'
+alias sg='ssh-add ~/.ssh/mbp-fedora-git-key'
+
+# Configs
+alias bashcfg='nvim ~/.bashrc'
+alias bashsrc='source ~/.bashrc'
+alias hyprcfg='nvim ~/.config/hypr/hyprland.conf'
+
+# Window Manager
+alias wppr='~/.config/wallpapers/next-wallpaper.sh'
+
+# Uncomment the following line if you don't like systemctl's auto-paging feature:
+# export SYSTEMD_PAGER=
+
+# User specific aliases and functions
+if [ -d ~/.bashrc.d ]; then
+    for rc in ~/.bashrc.d/*; do
+        if [ -f "$rc" ]; then
+            . "$rc"
+        fi
+    done
+fi
+unset rc
+
+eval "$(ssh-agent -s)"  >/dev/null
+eval "$(starship init bash)"
+eval "$(zoxide init bash)"
+. "$HOME/.cargo/env"
