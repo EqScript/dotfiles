@@ -1,0 +1,4 @@
+# ~/.local/share/chezmoi/.gitignore
+
+dot_config/yandex-disk/passwd
+dot_config/yandex-disk/iid

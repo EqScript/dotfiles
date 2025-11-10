@@ -1,0 +1,8 @@
+# ~/.local/share/chezmoi/.chezmoiignore
+dot_config/yandex-disk/passwd
+dot_config/yandex-disk/iid
+**/plugged/
+**/node_modules/
+**/*.log
+**/__pycache__/
+
