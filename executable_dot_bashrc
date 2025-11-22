@@ -6,7 +6,7 @@ if [ -f /etc/bashrc ]; then
 fi
 
 # User specific environment
-for dir in "$HOME/.cargo/bin" "$HOME/.local/bin" "$HOME/bin"; do
+for dir in "$HOME/.cargo/bin" "$HOME/.local/bin" "$HOME/bin" "$HOME/.platformio/penv/bin"; do
     case ":$PATH:" in
         *":$dir:"*) ;; # already in PATH
         *) PATH="$dir:$PATH" ;;
@@ -14,10 +14,9 @@ for dir in "$HOME/.cargo/bin" "$HOME/.local/bin" "$HOME/bin"; do
 done
 export PATH
 
-# Starship
-export STARSHIP_CONFIG=~/.config/starship/starship_pastel.toml.toml
-
-# System Editor
+# Env Variables
+export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml"
+export XDG_CONFIG_HOME="$HOME/.config"
 export EDITOR=nvim
 
 # Utilities
@@ -40,6 +39,12 @@ alias hyprcfg='nvim ~/.config/hypr/hyprland.conf'
 
 # Window Manager
 alias wppr='~/.config/wallpapers/next-wallpaper.sh'
+alias logout='loginctl terminate-user $USER'
+alias sus='systemctl suspend'
+alias shutd='shutdown now'
+
+# Others
+alias c='clear'
 
 # Uncomment the following line if you don't like systemctl's auto-paging feature:
 # export SYSTEMD_PAGER=

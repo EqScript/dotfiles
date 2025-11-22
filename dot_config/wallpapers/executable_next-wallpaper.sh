@@ -20,10 +20,13 @@ if [ -n "$RANDOM_WALLPAPER" ]; then
       swaymsg output "*" bg "$RANDOM_WALLPAPER" fill
       ;;
     Hyprland)
-      hyprctl hyprpaper unload all >/dev/null
-      hyprctl hyprpaper preload "$RANDOM_WALLPAPER" >/dev/null
-      hyprctl hyprpaper wallpaper "eDP-1,$RANDOM_WALLPAPER" >/dev/null
-      hyprctl hyprpaper wallpaper "DP-4,$RANDOM_WALLPAPER" >/dev/null
+      pgrep hyprpaper >/dev/null || hyprpaper &
+      sleep 0.5
+      hyprctl hyprpaper unload all
+      hyprctl hyprpaper preload "$RANDOM_WALLPAPER"
+      for output in $(hyprctl monitors | awk '/Monitor/ {print $2}'); do
+        hyprctl hyprpaper wallpaper "$output,$RANDOM_WALLPAPER"
+      done
       ;;
     *)
       echo "Unsupported compositor: $COMPOSITOR"
