@@ -1,0 +1,45 @@
+#!/usr/bin/env bash
+# audioctl.sh - Extracts Audio Sinks using wpctl
+# Usage:
+#   audioctl.sh ls - lists the existing Audio Sinks (With ID)
+#   audioctl.sh {ID} - sets Output with {ID} ass default
+
+set -euo pipefail
+script_name=$(basename "$0")
+
+# List Sinks
+list_sinks() {
+  wpctl status | awk '/Sinks:/ {if (!seen) {flag=1; seen=1; next}}
+  /Sources:/ {flag=0}
+  flag { gsub(/^[^0-9]+/, ""); print }
+  '
+}
+
+# Set Default Sink by ID
+set_sink() {
+  local sink_id="$1"
+
+  # Checking for numeric
+  if ! [[ "$sink_id" =~ ^[0-9]+$ ]]; then
+    echo "Error: output ID should be numeric: (e.g. 55, 60)" >&2
+    exit 1
+  fi
+
+  echo "Setting default output to ID $sink_id..."
+  wpctl set-default "$sink_id"
+}
+
+# Main
+case "${1:-}" in
+  ls)
+    list_sinks
+    ;;
+  ""|-h|--help)
+    echo "Usage:"
+    echo "  $script_name ls          # list vailable outputs"
+    echo "  $script_name <ID>        # sets the output with the ID as default"
+    ;;
+  *)
+    set_sink "$1"
+    ;;
+esac
