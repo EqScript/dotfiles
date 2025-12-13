@@ -1,3 +1,31 @@
+/home/sergio/Music/Music By Daria/Before/Cassia - Drifting.mp3
+/home/sergio/Music/Music By Daria/Before/Cayucas - Jessica WJ.mp3
+/home/sergio/Music/Music By Daria/Before/DIIV - Under the Sun.mp3
+/home/sergio/Music/Music By Daria/Before/Future Islands - A Dream of You and Me.mp3
+/home/sergio/Music/Music By Daria/Before/Manu Katché - Glow.mp3
+/home/sergio/Music/Music By Daria/Before/SHELTER BOY - Tides.mp3
+/home/sergio/Music/Music By Daria/Before/Tash Sultana - Pretty Lady.mp3
+/home/sergio/Music/Music By Daria/Before/The Avalanches feat. MGMT, Johnny Marr - The Divine Chord.mp3
+/home/sergio/Music/Music By Daria/Before/The War On Drugs - Under The Pressure.mp3
+/home/sergio/Music/Music By Daria/Before/Two Door Cinema Club - Something Good Can Work.mp3
+/home/sergio/Music/Music By Daria/Before/Unknown Mortal Orchestra - Swim and Sleep (Like A Shark).mp3
+/home/sergio/Music/Music By Daria/Before/Yuno - Sunlight.mp3
+/home/sergio/Music/Music By Daria/Before/Песня Brasstronaut - Francisco [ backingtrackx.com ].mp3
+/home/sergio/Music/Music By Daria/Between/Clairo - 4EVER.mp3
+/home/sergio/Music/Music By Daria/Between/Goth Babe - Weekend Friend.mp3
+/home/sergio/Music/Music By Daria/Between/Local Natives - When Am I Gonna Lose You.mp3
+/home/sergio/Music/Music By Daria/Between/Siamese Elephants - Dancing in the City.mp3
+/home/sergio/Music/Music By Daria/Between/Sirens Of Lesbos - Zeus.mp3
+/home/sergio/Music/Music By Daria/Between/Slum Sociable - Life Is Free.mp3
+/home/sergio/Music/Music By Daria/Post/A Certain Ratio - Down, Down, Down.mp3
+/home/sergio/Music/Music By Daria/Post/Bombay Bicycle Club - Luna.mp3
+/home/sergio/Music/Music By Daria/Post/Capital Cities - Kangaroo Court.mp3
+/home/sergio/Music/Music By Daria/Post/Hot Chip feat. Jarvis Cocker - Straight To The Morning.mp3
+/home/sergio/Music/Music By Daria/Post/Jungle - Keep Moving.mp3
+/home/sergio/Music/Music By Daria/Post/Sure Sure - This Must Be The Place.mp3
+/home/sergio/Music/Music By Daria/Post/Temples - Paraphernalia.mp3
+/home/sergio/Music/Music By Daria/Post/The 1975 - If You’re Too Shy (Let Me Know).mp3
+/home/sergio/Music/Music By Daria/Post/The Black Keys - Lo_Hi.mp3
 /home/sergio/Music/Peter Gabriel - So (Geffen 9 24088-2, Mfd by JVC, US) 1986/Peter Gabriel - So.flac
 /home/sergio/Music/Toto - 1996 - Greatest Hits (2CD)/CD1/Toto - Greatest Hits (CD1).flac
 /home/sergio/Music/1860 - Artificial Daylight - 2013/01 Go Forth.mp3
@@ -90,6 +118,8 @@ cue:///home/sergio/Music/John Mayer/2013 - John Mayer - Paradise Valley (EU, Pol
 cue:///home/sergio/Music/John Mayer/2013 - John Mayer - Paradise Valley (EU, Poland, Columbia, 88883756482)/John Mayer - Paradise Valley.cue/9
 cue:///home/sergio/Music/John Mayer/2013 - John Mayer - Paradise Valley (EU, Poland, Columbia, 88883756482)/John Mayer - Paradise Valley.cue/10
 cue:///home/sergio/Music/John Mayer/2013 - John Mayer - Paradise Valley (EU, Poland, Columbia, 88883756482)/John Mayer - Paradise Valley.cue/11
+/home/sergio/Music/Music By Daria/Post/London Electricity - Out Of This World.mp3
+/home/sergio/Music/Music By Daria/Before/Men I Trust - Tailwhip.mp3
 cue:///home/sergio/Music/Rush - Discography/1985 - Power Windows (WPCR-13482)/Rush - Power Windows.cue/1
 cue:///home/sergio/Music/Rush - Discography/1985 - Power Windows (WPCR-13482)/Rush - Power Windows.cue/2
 cue:///home/sergio/Music/Rush - Discography/1985 - Power Windows (WPCR-13482)/Rush - Power Windows.cue/3
