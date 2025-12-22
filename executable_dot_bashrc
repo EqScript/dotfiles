@@ -12,7 +12,8 @@ for dir in \
   "$HOME/bin" \
   "$HOME/.platformio/penv/bin" \
   "$HOME/.config/scripts" \
-  "/opt/RustRover-2025.2.5/bin/"
+  "/opt/RustRover-2025.2.5/bin/" \
+  "/srv/firmware/"
 do
     case ":$PATH:" in
         *":$dir:"*) ;; # already in PATH
@@ -54,6 +55,8 @@ alias shutd='shutdown now'
 # Others
 alias cl='clear'
 alias lg='ssh-add $HOME/.ssh/mbp-fedora-git-key && lazygit'
+alias syshmi='ssh-add $HOME/.ssh/mbp-fd-system-hmi-syshmi && ssh syshmi@192.168.10.103'
+alias radxa='ssh-add $HOME/.ssh/mbp-fd-radxa && ssh sergio@192.168.10.105'
 alias usb0='tio /dev/ttyUSB0'
 alias acm0='tio /dev/ttyACM0'
 

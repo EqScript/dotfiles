@@ -31,10 +31,10 @@ set_sink() {
 
 # Main
 case "${1:-}" in
-  ls)
+  ""|ls)
     list_sinks
     ;;
-  ""|-h|--help)
+  -h|--help)
     echo "Usage:"
     echo "  $script_name ls          # list vailable outputs"
     echo "  $script_name <ID>        # sets the output with the ID as default"
