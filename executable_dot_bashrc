@@ -39,7 +39,7 @@ alias gc='git commit -m'
 alias gst='git status'
 alias gl='git pull'
 alias gp='git push'
-alias sg='ssh-add ~/.ssh/mbp-fedora-git-key'
+alias sg='ssh-add ~/.ssh/mifd-git-full'
 
 # Configs
 alias bashcfg='nvim ~/.local/share/chezmoi/executable_dot_bashrc && chezmoi apply'
@@ -54,7 +54,7 @@ alias shutd='shutdown now'
 
 # Others
 alias cl='clear'
-alias lg='ssh-add $HOME/.ssh/mbp-fedora-git-key && lazygit'
+alias lg='ssh-add $HOME/.ssh/mifd-git-full && lazygit'
 alias syshmi='ssh-add $HOME/.ssh/mbp-fd-system-hmi-syshmi && ssh syshmi@192.168.10.103'
 alias radxa='ssh-add $HOME/.ssh/mbp-fd-radxa && ssh sergio@192.168.10.105'
 alias usb0='tio /dev/ttyUSB0'
