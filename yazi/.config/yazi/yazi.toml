@@ -1,5 +1,0 @@
-[opener]
-edit = [{ run = "hx $@", block = true, desc = "Edit with Helix" }]
-
-[mgr]
-show_hidden = true
