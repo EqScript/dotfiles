@@ -13,7 +13,8 @@ for dir in \
   "$HOME/.platformio/penv/bin" \
   "$HOME/.config/scripts" \
   "/opt/RustRover-2025.2.5/bin/" \
-  "/srv/firmware/"
+  "/srv/firmware/" \
+  "$HOME/.local/bin"
 do
     case ":$PATH:" in
         *":$dir:"*) ;; # already in PATH
@@ -26,6 +27,7 @@ export PATH
 export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml"
 export XDG_CONFIG_HOME="$HOME/.config"
 export EDITOR=nvim
+export CARGO_TARGET_DIR="$HOME/.local/share/bin"
 
 # Utilities
 alias zz='z ..'
@@ -42,9 +44,12 @@ alias gp='git push'
 alias sg='ssh-add ~/.ssh/mifd-git-full'
 
 # Configs
-alias bashcfg='nvim ~/.local/share/chezmoi/executable_dot_bashrc && chezmoi apply'
+alias bashcfg='nvim ~/.local/share/chezmoi/executable_dot_bashrc && chezmoi apply && source $HOME/.bashrc'
 alias bashsrc='source ~/.bashrc'
 alias hyprcfg='nvim ~/.local/share/chezmoi/dot_config/hypr/hyprland.conf && chezmoi apply'
+chezcfg() { 
+  nvim $HOME/.local/share/chezmoi/"$@"
+}
 
 # Window Manager
 alias wppr='~/.config/wallpapers/next-wallpaper.sh'
