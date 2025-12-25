@@ -27,7 +27,6 @@ export PATH
 export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml"
 export XDG_CONFIG_HOME="$HOME/.config"
 export EDITOR=nvim
-export CARGO_TARGET_DIR="$HOME/.local/share/bin"
 
 # Utilities
 alias zz='z ..'
@@ -48,7 +47,7 @@ alias bashcfg='nvim ~/.local/share/chezmoi/executable_dot_bashrc && chezmoi appl
 alias bashsrc='source ~/.bashrc'
 alias hyprcfg='nvim ~/.local/share/chezmoi/dot_config/hypr/hyprland.conf && chezmoi apply'
 chezcfg() { 
-  nvim $HOME/.local/share/chezmoi/"$@"
+  nvim $HOME/.local/share/chezmoi/dot_config"$@"
 }
 
 # Window Manager
@@ -64,6 +63,7 @@ alias syshmi='ssh-add $HOME/.ssh/mbp-fd-system-hmi-syshmi && ssh syshmi@192.168.
 alias radxa='ssh-add $HOME/.ssh/mbp-fd-radxa && ssh sergio@192.168.10.105'
 alias usb0='tio /dev/ttyUSB0'
 alias acm0='tio /dev/ttyACM0'
+alias battery='upower -i /org/freedesktop/UPower/devices/DisplayDevice'
 
 # Uncomment the following line if you don't like systemctl's auto-paging feature:
 # export SYSTEMD_PAGER=
