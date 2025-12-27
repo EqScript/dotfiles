@@ -46,8 +46,9 @@ alias sg='ssh-add ~/.ssh/mifd-git-full'
 alias bashcfg='nvim ~/.local/share/chezmoi/executable_dot_bashrc && chezmoi apply && source $HOME/.bashrc'
 alias bashsrc='source ~/.bashrc'
 alias hyprcfg='nvim ~/.local/share/chezmoi/dot_config/hypr/hyprland.conf && chezmoi apply'
+alias wtcfg="nvim $HOME/.local/share/chezmoi/dot_wezterm.lua && chezmoi apply"
 chezcfg() { 
-  nvim $HOME/.local/share/chezmoi/dot_config"$@"
+  nvim $HOME/.local/share/chezmoi/dot_config"$@" && chezmoi apply
 }
 
 # Window Manager
