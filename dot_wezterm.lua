@@ -15,8 +15,5 @@ local shell = "bash"
 config.font_size = 14
 config.color_scheme = 'Dissonance (Gogh)'
 
--- Welcome screen
-config.default_prog = { "bash", "-c", "fastfetch --logo none; bash -l" }
-
 -- Finally, return the configuration to wezterm:
 return config

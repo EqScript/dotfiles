@@ -83,3 +83,8 @@ eval "$(ssh-agent -s)"  >/dev/null
 eval "$(starship init bash)"
 eval "$(zoxide init bash)"
 . "$HOME/.cargo/env"
+
+# Starting fastfetch
+if [[ $- == *i* ]]; then 
+  fastfetch
+fi
