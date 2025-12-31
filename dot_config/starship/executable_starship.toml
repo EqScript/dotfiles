@@ -6,9 +6,18 @@
 #"""
 #format = '$all'
 
+# Command line layout
+format = """
+$username$localip$hostname$directory$git_branch$git_status$cmd_duration
+$character"""
+
+[character]
+success_symbol = " [➜](bold green) " # Добавь пробел ПЕРЕД стрелкой
+error_symbol = " [✗](bold red) "
+
 [localip]
 ssh_only = false
-format = '◉ [$localipv4](bold yellow) '
+format = '[◉ ](bold cyan) [$localipv4](bold yellow) '
 disabled = false
 
 [username]
@@ -20,16 +29,10 @@ show_always = true
 
 [hostname]
 ssh_only = false
-format = 'on [$hostname](bold yellow) '
+format = '[◉ ](bold cyan)[$hostname](bold yellow) '
 trim_at = "."
 disabled = true
 
-# Replace the "❯" symbol in the prompt with "➜"
-[character]                            # The name of the module we are configuring is "character"
-success_symbol = "[➜](bold green)"     # The "success_symbol" segment is being set to "➜" with the color "bold green"
-error_symbol = "[✗](bold red)"
-#  
-# configure directory
 [directory]
 read_only = " "
 truncation_length = 10
@@ -42,8 +45,6 @@ show_milliseconds = false
 disabled = false
 style = "bold italic yellow"
 
-format = """$all$fill$time"""
-
 [fill]
 symbol = " " 
 
@@ -54,7 +55,7 @@ time_format = '%R' # R - 18:00, r - 6:00pm
 style = "bold cyan" 
 
 [line_break]
-disabled = true
+disabled = false
 
 [aws]
 symbol = "  "
@@ -80,13 +81,12 @@ symbol = " "
 [elm]
 symbol = " "
 
-[git_branch]
-symbol = " "
-
 [golang]
 symbol = " "
 
-[hg_branch]
+[git_branch]
+style = "bold purple"
+format = "[◉ ](bold cyan)[$symbol$branch]($style) "
 symbol = " "
 
 [java]
