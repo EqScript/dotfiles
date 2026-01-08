@@ -34,6 +34,12 @@ alias ya='yazi'
 alias la='ls -lha'
 alias rm='trash'
 
+# Cargo/Rust
+alias cr='cargo run'
+alias cb='cargo build'
+alias crr='cargo run --release'
+alias cbr='cargo build --release'
+
 # Git
 alias ga='git add .'
 alias gc='git commit -m'
