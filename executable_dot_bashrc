@@ -26,7 +26,7 @@ export PATH
 # Env Variables
 export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml"
 export XDG_CONFIG_HOME="$HOME/.config"
-export EDITOR=nvim
+export EDITOR='vv'
 
 # Utilities
 alias zz='z ..'
@@ -47,6 +47,8 @@ alias gst='git status'
 alias gl='git pull'
 alias gp='git push'
 alias sg='ssh-add ~/.ssh/mifd-git-full'
+
+# Others
 
 # Configs
 alias bashcfg='nvim ~/.local/share/chezmoi/executable_dot_bashrc && chezmoi apply && source $HOME/.bashrc'

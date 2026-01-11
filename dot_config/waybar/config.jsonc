@@ -1,7 +1,7 @@
 {
   "layer": "bottom",
   "position": "top",
-  "height": 40,
+  // "height": 40, // We follow the font-size - in style.css
   "spacing": 2,
   "exclusive": true,
   "gtk-layer-shell": true,
@@ -46,7 +46,8 @@
     "format": "{id}",
     "all-outputs": true,
     "disable-scroll": false,
-    "active-only": false
+    "active-only": false,
+	"swap-icon-label": false
   },
   "hyprland/window": {
     "format": "{title}"
@@ -92,7 +93,7 @@
       "headphone": "",
       "default": [" ", " ", " "]
     },
-    "on-click": "audioctl ls"
+    "on-click": "audioctl"
   },
   "battery": {
     "bat": "BAT0",

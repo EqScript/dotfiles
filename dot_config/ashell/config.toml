@@ -1,5 +1,5 @@
 log_level = "warn"
-outputs = { Targets = ["eDP-1", "DP-1"] }
+outputs = { Targets = ["eDP-1", "DP-1", "DP-2"] }
 position = "Top"
 app_launcher_cmd = "walker"
 
@@ -18,7 +18,7 @@ enable_workspace_filling = true
 [[CustomModule]]
 name = "appLauncher"
 icon = "󱗼"
-command = "walker"
+command = "wofi --show drun"
 
 [window_title]
 truncate_title_after_length = 100
@@ -48,6 +48,7 @@ weak = "#e0af68"
 base = "#1a1b26"
 weak = "#24273a"
 strong = "#414868"
+opacity = 0.5
 
 [appearance.secondary_color]
 base = "#0c0d14"
