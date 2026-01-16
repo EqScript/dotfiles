@@ -5,7 +5,7 @@
 -- Use spaces instead of tabs
 vim.opt.expandtab = true
 -- How many spaces a <Tab> character represents
-vim.opt.tabstop = 4
+vim.opt.tabstop = 8
 -- How many spaces to use for each step of (auto)indent
-vim.opt.shiftwidth = 4
+vim.opt.shiftwidth = 8
 
