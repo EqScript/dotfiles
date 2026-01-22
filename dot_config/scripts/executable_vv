@@ -5,4 +5,4 @@ NVIM_DIR="$HOME/.local/bin/nvim"
 export VIMRUNTIME="$NVIM_DIR/share/nvim/runtime"
 
 # Запускаем бинарник
-$NVIM_DIR/nvim "$@"
+$NVIM_DIR/bin/nvim "$@"

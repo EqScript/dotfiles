@@ -51,7 +51,7 @@ alias sg='ssh-add ~/.ssh/mbp-fedora-git-key'
 # Others
 
 # Configs
-alias bashcfg='nvim ~/.local/share/chezmoi/executable_dot_bashrc && chezmoi apply && source $HOME/.bashrc'
+alias chedit='chezmoi edit'
 alias bashsrc='source ~/.bashrc'
 
 

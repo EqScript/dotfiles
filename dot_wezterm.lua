@@ -18,7 +18,7 @@ config.hide_tab_bar_if_only_one_tab = true
 -- or, changing the font size and color scheme.
 config.font_size = 14
 config.font = wezterm.font_with_fallback {
-  'BlexMono Nerd Font',
+  --  'BlexMono Nerd Font',
   'Hack Nerd Font Mono',
   'Lilex Nerd Font Mono',
   'Iosevka Nerd Font Mono'
