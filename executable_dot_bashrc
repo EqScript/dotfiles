@@ -61,6 +61,12 @@ alias radxa='ssh-add $HOME/.ssh/mbp-fd-radxa && ssh sergio@192.168.10.105'
 alias usb0='tio /dev/ttyUSB0'
 alias acm0='tio /dev/ttyACM0'
 alias battery='upower -i /org/freedesktop/UPower/devices/DisplayDevice'
+alias ping1='ping 1.1.1.1'
+alias pingg='ping google.com'
+
+# Network
+alias mariner='nmcli conn up Mariner'
+alias mariner5='nmcli conn up Mariner5+'
 
 # Uncomment the following line if you don't like systemctl's auto-paging feature:
 # export SYSTEMD_PAGER=
