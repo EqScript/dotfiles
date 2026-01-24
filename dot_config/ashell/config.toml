@@ -21,7 +21,7 @@ icon = "󱗼"
 command = "wofi --show drun"
 
 [window_title]
-truncate_title_after_length = 100
+truncate_title_after_length = 160
 
 [settings]
 lock_cmd = "playerctl --all-players pause; nixGL hyprlock &"
