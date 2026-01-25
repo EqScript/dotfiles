@@ -16,12 +16,13 @@ config.hide_tab_bar_if_only_one_tab = true
 -- config.initial_rows = 28
 
 -- or, changing the font size and color scheme.
-config.font_size = 14
+config.font_size = 18
 config.font = wezterm.font_with_fallback {
-  'BlexMono Nerd Font',
-  'Hack Nerd Font Mono',
-  'Lilex Nerd Font Mono',
-  'Iosevka Nerd Font Mono'
+	'Terminess Nerd Font Mono',
+	'BlexMono Nerd Font',
+	'Hack Nerd Font Mono',
+	'Lilex Nerd Font Mono',
+	'Iosevka Nerd Font Mono'
 }
 config.color_scheme = 'Dissonance (Gogh)'
 

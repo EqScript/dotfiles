@@ -12,8 +12,8 @@ $username$localip$hostname$directory$git_branch$git_status$cmd_duration
 $character"""
 
 [character]
-success_symbol = " [➜](bold green) " # Добавь пробел ПЕРЕД стрелкой
-error_symbol = " [✗](bold red) "
+success_symbol = "[╰➜](bold green) " 
+error_symbol = "[╰](bold green)[✗](bold red) "
 
 [localip]
 ssh_only = false
@@ -23,7 +23,7 @@ disabled = false
 [username]
 style_user = "green bold"
 style_root = "red bold"
-format = "[$user]($style) "
+format = "[╭$user]($style) "
 disabled = false
 show_always = true
 
@@ -55,7 +55,7 @@ time_format = '%R' # R - 18:00, r - 6:00pm
 style = "bold cyan" 
 
 [line_break]
-disabled = false
+disabled = true
 
 [aws]
 symbol = "  "

@@ -1,12 +1,12 @@
 log_level = "warn"
 outputs = { Targets = ["eDP-1", "DP-1", "DP-2"] }
 position = "Top"
-app_launcher_cmd = "walker"
+app_launcher_cmd = "wofi --show drun"
 
 [modules]
 left = [ [ "appLauncher", "Updates", "Workspaces" ] ]
 center = [ "WindowTitle" ]
-right = [ "SystemInfo", [  "Tray", "Clock", "Privacy", "Settings" ] ]
+right = [ "keyboard_layout", "SystemInfo", [ "Tray", "Clock", "Privacy", "Settings" ] ]
 
 [updates]
 check_cmd = "checkupdates; paru -Qua"
@@ -14,6 +14,10 @@ update_cmd = 'alacritty -e bash -c "paru; echo Done - Press enter to exit; read"
 
 [workspaces]
 enable_workspace_filling = true
+
+[keyboard_layout.labels]
+"English (US)" = "🇺🇸"
+"Russian" = "🇷🇺"
 
 [[CustomModule]]
 name = "appLauncher"
@@ -33,7 +37,7 @@ bluetooth_more_cmd = "blueberry"
 
 [appearance]
 style = "Islands"
-scale_factor = 1.2
+scale_factor = 1.25
 primary_color = "#7aa2f7"
 success_color = "#9ece6a"
 text_color = "#a9b1d6"

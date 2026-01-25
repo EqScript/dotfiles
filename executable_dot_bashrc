@@ -51,19 +51,21 @@ alias sg='ssh-add ~/.ssh/mifd-git-full'
 # Others
 
 # Configs
-alias bashcfg='nvim ~/.local/share/chezmoi/executable_dot_bashrc && chezmoi apply && source $HOME/.bashrc'
+alias bashcfg='chezmoi edit --apply ~/.bashrc && . ~/.bashrc'
 alias bashsrc='source ~/.bashrc'
 alias hyprcfg='nvim ~/.local/share/chezmoi/dot_config/hypr/hyprland.conf && chezmoi apply'
 alias wtcfg="nvim $HOME/.local/share/chezmoi/dot_wezterm.lua && chezmoi apply"
-chezcfg() { 
-  nvim $HOME/.local/share/chezmoi/dot_config"$@" && chezmoi apply
-}
+alias chedit='chezmoi edit --apply'
 
 # Window Manager
 alias wppr='~/.config/wallpapers/next-wallpaper.sh'
 alias logout='loginctl terminate-user $USER'
 alias sus='systemctl suspend'
 alias shutd='shutdown now'
+
+# Network
+alias mariner='nmcli con up Mariner'
+alias mariner5='nmcli con up Mariner5+'
 
 # Others
 alias cl='clear'
