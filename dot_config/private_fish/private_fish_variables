@@ -37,3 +37,4 @@ SETUVAR fish_pager_color_selected_background:\x2dr
 SETUVAR fish_pager_color_selected_completion:\x1d
 SETUVAR fish_pager_color_selected_description:\x1d
 SETUVAR fish_pager_color_selected_prefix:\x1d
+SETUVAR fish_user_paths:/srv/firmware\x1e/opt/RustRover\x2d2025\x2e2\x2e5/bin\x1e/home/sergio/\x2econfig/scripts\x1e/home/sergio/\x2eplatformio/penv/bin\x1e/home/sergio/\x2elocal/bin\x1e/home/sergio/\x2ecargo/bin
