@@ -16,7 +16,7 @@ config.hide_tab_bar_if_only_one_tab = true
 -- config.initial_rows = 28
 
 -- or, changing the font size and color scheme.
-config.font_size = 18
+config.font_size = 16
 config.font = wezterm.font_with_fallback {
 	'Terminess Nerd Font Mono',
 	'BlexMono Nerd Font',
