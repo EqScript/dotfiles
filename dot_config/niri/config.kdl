@@ -77,11 +77,11 @@ input {
 output "eDP-1" {
     // Native resolution for Xiaomi Book Pro 14 (16:10 aspect ratio)
     // Using 90Hz for maximum smoothness on OLED
-    mode "2880x1800@90.00"
+    mode "1280x1080@60.00"
 
     // Set scale to 2.0 for HiDPI (effective resolution 1440x900)
     // You can also try 1.5 or 1.75 if you want more screen real estate
-    scale 2.0
+    scale 1.5
 
     position x=0 y=0
 }
