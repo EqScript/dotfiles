@@ -13,7 +13,7 @@ input {
             // For more information, see xkeyboard-config(7).
 
              layout "us,ru"
-             options "grp:ctrl_space_toggle,compose:ralt,ctrl:nocaps"
+             options "grp:win_space_toggle"
 
             // If this section is empty, niri will fetch xkb settings
             // from org.freedesktop.locale1. You can control these using
@@ -44,7 +44,7 @@ input {
     mouse {
         // off
         // natural-scroll
-        // accel-speed 0.2
+        accel-speed 0.2
         // accel-profile "flat"
         // scroll-method "no-scroll"
     }
@@ -75,16 +75,26 @@ input {
 // https://yalter.github.io/niri/Configuration:-Outputs
 // Remember to uncomment the node by removing "/-"!
 output "eDP-1" {
-    // Native resolution for Xiaomi Book Pro 14 (16:10 aspect ratio)
-    // Using 90Hz for maximum smoothness on OLED
     mode "2880x1800@90.00"
-
-    // Set scale to 2.0 for HiDPI (effective resolution 1440x900)
-    // You can also try 1.5 or 1.75 if you want more screen real estate
     scale 2.0
-
     position x=0 y=0
 }
+
+output "desc:Apple Computer Inc LED Cinema W832303T6JL" {
+    mode "2569x1440@59.951"
+    scale 1.0
+    // Position calculated as: eDP width (2880) / scale (2.0) = 1440
+    position x=1440 y=0
+}
+
+output "desc:PNP(GWD) ARZOPA 000000000000" {
+    mode "1920x1080@60.000"
+    scale 1.0   
+    // Position calculated as: eDP width (2880) / scale (2.0) = 1440
+    position x=1440 y=0
+    
+}
+
 
 output "desc:Xiaomi Corporation Mi Monitor" {
     // External Ultrawide monitor
@@ -95,6 +105,13 @@ output "desc:Xiaomi Corporation Mi Monitor" {
     position x=1440 y=0
 }
 
+output "PNP(GWD) ARZOPA 000000000000" {
+    mode "1920x1080@60.000"
+    scale 1.0   
+    // Position calculated as: eDP width (2880) / scale (2.0) = 1440
+    position x=1440 y=0
+    
+}
 // Settings that influence how windows are positioned and sized.
 // Find more information on the wiki:
 // https://yalter.github.io/niri/Configuration:-Layout
@@ -258,12 +275,12 @@ layout {
 
 spawn-at-startup "ashell"
 // Random Walpaper
-spawn-at-startup "sh" "-c" "swaybg -m fill -i $(find ~/.config/wallpapers -type f | shuf -n 1)"
 // Starting core services
 spawn-at-startup "swaync"
 spawn-at-startup "xwayland-satellite"
-
-
+spawn-at-startup "/usr/libexec/hyprpolkitagent"
+spawn-at-startup "hypridle"
+spawn-at-startup "sh" "-c" "swaybg -m fill -i /home/sergio/.config/wallpapers/black.jpg"
 
 // To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
 // spawn-sh-at-startup "qs -c ~/source/qs/MyAwesomeShell"
@@ -296,7 +313,7 @@ animations {
     // off
 
     // Slow down all animations by this factor. Values below 1 speed them up instead.
-    // slowdown 3.0
+    slowdown 2.0
 }
 
 // Window rules let you adjust behavior for individual windows.
@@ -310,8 +327,22 @@ window-rule {
     // since this is the default config, and we want no false positives.
     // You can get away with just app-id="wezterm" if you want.
     match app-id=r#"^org\.wezfurlong\.wezterm$"#
-    default-column-width {}
+     // default-column-width {}
+     open-maximized true
+     
+ }
+
+ window-rule {
+    match app-id=r#"^kitty$"#
+     open-maximized true
+ }
+
+// syshmi-core build
+window-rule {
+    match app-id="^syshmi-core$" title="^System HMI - UI$"
+    open-floating true
 }
+
 
 // Open the Firefox picture-in-picture player as floating by default.
 window-rule {
@@ -320,6 +351,7 @@ window-rule {
     // - Flatpak Firefox (app-id is "org.mozilla.firefox")
     match app-id=r#"firefox$"# title="^Picture-in-Picture$"
     open-floating true
+    min-width 600
 }
 
 // Example: block out two password managers from screen capture.
@@ -357,8 +389,8 @@ binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
 
     // Suggested binds for running programs: terminal, app launcher, screen locker.
-    Mod+T hotkey-overlay-title="Open a Terminal: Wezterm" { spawn "wezterm"; }
-	Mod+Return hotkey-overlay-title="Open Terminal" { spawn "wezterm"; }
+    Mod+T hotkey-overlay-title="Open a Terminal: kitty" { spawn "kitty"; }
+	Mod+Return hotkey-overlay-title="Open Terminal + Zellij" { spawn "kitty" "zellij"; }
     Mod+D hotkey-overlay-title="Run an Application: wofi" { spawn "wofi" "--show" "drun"; }
     Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
 

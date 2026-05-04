@@ -1,8 +1,0 @@
-#!/bin/bash
-NVIM_DIR="$HOME/.local/bin/nvim"
-
-# Оставляем только самое необходимое
-export VIMRUNTIME="$NVIM_DIR/share/nvim/runtime"
-
-# Запускаем бинарник
-$NVIM_DIR/nvim "$@"

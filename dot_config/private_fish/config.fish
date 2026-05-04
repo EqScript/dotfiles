@@ -4,8 +4,8 @@
 set -g fish_greeting ""
 
 # Set up the editor (Vim, as requested)
-set -gx EDITOR hx
-set -gx VISUAL hx
+set -gx EDITOR nvim
+set -gx VISUAL nvim
 
 # Initialize Starship prompt if installed
 set -gx STARSHIP_CONFIG ~/.config/starship/jetpack.toml
@@ -31,4 +31,14 @@ fish_add_path "$HOME/bin"
 fish_add_path "$HOME/.platformio/penv/bin"
 fish_add_path "$HOME/.config/scripts"
 fish_add_path "/opt/RustRover-2025.2.5/bin/"
-fish_add_path /srv/firmware/
+fish_add_path /srv/syshmi/
+fish_add_path "$HOME/.pyenv/bin"
+
+# Only run pyenv init in interactive shells
+if status is-interactive
+    pyenv init - | source
+    pyenv virtualenv-init - | source
+end
+
+# ESP-IDF activation
+alias get_idf="source /home/sergio/.espressif/v6.0/esp-idf/export.fish"

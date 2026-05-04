@@ -1,0 +1,11 @@
+vim.opt.guicursor = "n-v-c:block,i-ci-ve:ver25,r-cr:hor20,o:hor50"
+vim.opt.nu = true
+vim.opt.relativenumber = true
+vim.opt.tabstop = 4
+vim.opt.softtabstop = 4
+vim.opt.shiftwidth = 4
+vim.opt.colorcolumn = "80"
+vim.opt.listchars = "tab:‣ ,multispace:|    ,eol:␍"
+vim.opt.winborder = "rounded"
+vim.opt.clipboard = "unnamedplus"
+vim.g.mapleader = " "
