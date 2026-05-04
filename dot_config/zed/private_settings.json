@@ -7,51 +7,47 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
-    "minimap": {
-        "show": "auto"
+  "preview_tabs": {
+    "enable_preview_from_file_finder": true,
+    "enable_preview_from_project_panel": false,
+    "enable_preview_file_from_code_navigation": false,
+    "enable_preview_from_multibuffer": false,
+    "enabled": true,
+  },
+  "text_rendering_mode": "platform_default",
+  "ui_font_family": "BlexMono Nerd Font",
+  "buffer_font_family": "JetBrainsMono Nerd Font",
+  "icon_theme": {
+    "mode": "system",
+    "light": "Zed (Default)",
+    "dark": "Zed (Default)",
+  },
+  "active_pane_modifiers": {
+    "border_size": 2.0,
+    "inactive_opacity": 0.8,
+  },
+  "tabs": {
+    "git_status": true,
+  },
+  "search": {
+    "button": true,
+  },
+  "ui_font_size": 18.0,
+  "buffer_font_size": 16.0,
+  "theme": {
+    "mode": "system",
+    "light": "One Light",
+    "dark": "Zedokai Darker (Filter Spectrum)",
+  },
+  "lsp": {
+    "clangd": {
+      "binary": {
+        "arguments": [
+          "--compile-commands-dir=.",
+          "--query-driver=**/*xtensa-esp32*-elf-gcc*",
+          "--header-insertion=never",
+        ],
+      },
     },
-    "tab_size": 4,
-    "hard_tabs": false,
-    "ui_font_family": "Hack Nerd Font Mono",
-    "buffer_font_family": "JetBrainsMono Nerd Font Mono",
-    "vim_mode": true,
-    "icon_theme": "Colored Zed Icons Theme Dark",
-    "ui_font_size": 20,
-    "buffer_font_size": 20,
-    "theme": {
-        "mode": "dark",
-        "light": "One Light",
-        "dark": "ChatGPT (EqScript)"
-    },
-    "lsp": {
-        "clangd": {
-            "binary": {
-                // NOTE: The exact path may vary based on your system,
-                // but this is a common location for a symlink to the store path.
-                "path": "/run/current-system/sw/bin/clangd"
-            },
-            "initialization_options": {
-                "clangd": {
-                    "fallbackFlags": [
-                        "-Wno-unused-includes",
-                        "typecheck_invalid_operands"
-                    ]
-                }
-            }
-        }
-    },
-    "terminal": {
-        "font_family": "JetBrainsMono Nerd Font Mono",
-        "font_size": 20
-    },
-    "languages": {
-        "Python": {
-            "language_servers": [
-                // Disable basedpyright and enable Ty, and otherwise use the default configuration.
-                "ty",
-                "!basedpyright",
-                "..."
-            ]
-        }
-    }
+  },
 }

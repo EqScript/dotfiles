@@ -35,28 +35,65 @@ wifi_more_cmd = "nm-connection-editor"
 vpn_more_cmd = "nm-connection-editor"
 bluetooth_more_cmd = "blueberry"
 
+
 [appearance]
 scale_factor = 1.25
 style = "Solid"
 font = "Hack Nerd Font"
 
-success_color = "#a3be8c"
-text_color = "#eceff4"
-workspace_colors = [ "#88c0d0", "#81a1c1", "#5e81ac" ]
+## Colors
+success_color = "#70e000"   # battery icon / success indicators
+text_color = "#eceff4"      # default text color across widgets
 
+# workspace indicator colors by monitor order
+# also used for:
+# - active workspace pills/tabs
+# - focused workspace highlights
+workspace_colors = [
+  "#434c5e",  # gray-blue inactive/focused base
+  "#cb5500",  # dark amber
+  "#fb8500"   # active orange accent
+]
+
+# interactive accent color
+# used for:
+# - active buttons
+# - slider fill
+# - slider handles
+# - selected/toggled controls
 [appearance.primary_color]
-base = "#88c0d0"
-text = "#242933"
+base = "#fb8500"
+weak = "#b35f00"
 
-[appearance.danger_color]
-base = "#bf616a"
-weak = "#ebcb8b"
 
-[appearance.background_color]
-base = "#3b4252"
-weak = "#434c5e"
-strong = "#4c566a"
-
+# structural UI surfaces and inactive elements
+# used for:
+# - inactive slider tracks
+# - separators / borders
+# - popup cards
+# - device selection panel background
+# - some inactive controls
 [appearance.secondary_color]
-base = "#1c212b"
-strong = "#2e3440"
+base   = "#434c5e"   # inactive slider track / borders
+weak   = "#4c566a"   # softer inactive/hover variants
+strong = "#3a4254"   # raised cards / device output panel
+
+
+# global background palette
+# used for:
+# - main popup background
+# - panel layers
+# - inactive buttons
+# - dark surfaces
+[appearance.background_color]
+base   = "#1c212b"   # main popup background
+weak   = "#2e3440"   # inactive buttons / secondary surfaces
+strong = "#3b4252"   # elevated/hover surfaces
+
+
+# warning / danger states
+# exact mapping depends on widget support
+[appearance.danger_color]
+base   = "#ffc300"
+weak   = "#e6b800"
+strong = "#ffd60a"
