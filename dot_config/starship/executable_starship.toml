@@ -12,8 +12,8 @@ $username$hostname$directory$git_branch$git_status$cmd_duration
 $character"""
 
 [character]
-success_symbol = "[╰➜](bold green) " 
-error_symbol = "[╰](bold green)[✗](bold red) "
+success_symbol = "[╰➜](bold yellow) " 
+error_symbol = "[╰](bold yellow)[ ✗](bold red) "
 
 [localip]
 ssh_only = false
@@ -21,9 +21,9 @@ format = '[◉ ](bold cyan) [$localipv4](bold yellow) '
 disabled = false
 
 [username]
-style_user = "green bold"
+style_user = "yellow bold"
 style_root = "red bold"
-format = "[╭$user]($style) "
+format = "[╭ $user]($style) "
 disabled = false
 show_always = true
 
@@ -35,9 +35,11 @@ disabled = true
 
 [directory]
 read_only = " "
-truncation_length = 10
+truncation_length = 20
 truncate_to_repo = true # truncates directory to root folder if in github repo
-style = "bold italic blue"
+style = "bold cyan"
+format = '[◉ $path](bold cyan) '
+
 
 [cmd_duration]
 min_time = 4
