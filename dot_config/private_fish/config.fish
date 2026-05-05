@@ -8,7 +8,7 @@ set -gx EDITOR nvim
 set -gx VISUAL nvim
 
 # Initialize Starship prompt if installed
-set -gx STARSHIP_CONFIG ~/.config/starship/jetpack.toml
+set -gx STARSHIP_CONFIG ~/.config/starship/starship.toml
 if command -q starship
     starship init fish | source
 end

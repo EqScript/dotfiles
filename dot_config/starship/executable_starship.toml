@@ -8,7 +8,7 @@
 
 # Command line layout
 format = """
-$username$localip$hostname$directory$git_branch$git_status$cmd_duration
+$username$hostname$directory$git_branch$git_status$cmd_duration
 $character"""
 
 [character]
