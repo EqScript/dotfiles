@@ -42,3 +42,11 @@ end
 
 # ESP-IDF activation
 alias get_idf="source /home/sergio/.espressif/v6.0/esp-idf/export.fish"
+
+# Show local IP in zellij bar
+function update_zellij_session --on-event fish_prompt
+    if set -q ZELLIJ
+        set -l ip (ip -4 route get 1 | sed -n 's/.*src \([0-9.]*\).*/\1/p')
+        zellij action rename-pane "🌐 $ip" 2>/dev/null
+    end
+end

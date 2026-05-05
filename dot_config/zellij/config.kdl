@@ -285,10 +285,63 @@ web_client {
 // 
 // simplified_ui true
  
+themes {
+    kitty-default {
+        text_unselected {
+            base 221 221 221
+            background 0 0 0
+            emphasis_0 204 4 3
+            emphasis_1 13 115 204
+            emphasis_2 25 203 0
+            emphasis_3 203 30 209
+        }
+        text_selected {
+            base 221 221 221
+            background 112 63 14
+            emphasis_0 204 4 3
+            emphasis_1 13 115 204
+            emphasis_2 25 203 0
+            emphasis_3 203 30 209
+        }
+        ribbon_selected {
+            base 0 0 0
+            background 221 221 221
+            emphasis_0 204 4 3
+            emphasis_1 13 115 204
+            emphasis_2 25 203 0
+            emphasis_3 203 30 209
+        }
+        ribbon_unselected {
+            base 0 0 0
+            background 118 118 118
+            emphasis_0 204 4 3
+            emphasis_1 13 115 204
+            emphasis_2 25 203 0
+            emphasis_3 203 30 209
+        }
+        frame_selected {
+            base 25 203 0
+            background 0 0 0
+            emphasis_0 204 4 3
+            emphasis_1 13 115 204
+            emphasis_2 25 203 0
+            emphasis_3 203 30 209
+        }
+        frame_highlight {
+            base 35 253 0
+            background 0 0 0
+            emphasis_0 204 4 3
+            emphasis_1 13 115 204
+            emphasis_2 25 203 0
+            emphasis_3 203 30 209
+        }
+    }
+}
+
 // Choose the theme that is specified in the themes section.
 // Default: default
 // 
-theme "kanagawa"
+theme "kitty-default"
  
 // Choose the base input mode of zellij.
 // Default: normal
