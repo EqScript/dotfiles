@@ -24,6 +24,11 @@ vim.pack.add({
 })
 require("nvim-tree").setup({})
 
+vim.pack.add({
+	{ src = 'https://github.com/nvim-mini/mini.indentscope'}, 
+})
+require('mini.indentscope').setup()
+
 -- LSP and Completion
 vim.pack.add({{src = "https://github.com/neovim/nvim-lspconfig"}})
 vim.pack.add({{src = "https://github.com/williamboman/mason-lspconfig.nvim"}})
