@@ -20,3 +20,5 @@ abbr -a -- gdif 'git diff'
 abbr -a -- disk yandex-disk
 abbr -a -- nmrescan 'nmcli device wifi rescan'
 abbr -a -- nmlist 'nmcli device wifi list'
+abbr -a -- zload 'zellij --layout /home/sergio/.config/zellij/my-workspace.kdl'
+abbr -a -- gputop 'amdgpu_top'

@@ -1,11 +1,16 @@
 # ~/.config/fish/config.fish
 
 # Disable the default greeting message
-set -g fish_greeting ""
+set -g fish_greeting "Welcome to fish!"
 
-# Set up the editor (Vim, as requested)
-set -gx EDITOR nvim
-set -gx VISUAL nvim
+# Set up the editor 
+set -gx EDITOR hx
+set -gx VISUAL hx
+
+# Load private local keys
+if test -f (status dirname)/config.local.fish)
+    source (status dirname)/config.local.fish
+end
 
 # Initialize Starship prompt if installed
 set -gx STARSHIP_CONFIG ~/.config/starship/starship.toml

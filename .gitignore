@@ -1,3 +1,4 @@
 dot_config/yandex-disk/private_passwd
 dot_config/yandex-disk/iid
 private_dot_local/
+dot_config/private_fish/config.local.fish
