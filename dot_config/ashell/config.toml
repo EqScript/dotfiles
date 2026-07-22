@@ -37,7 +37,7 @@ bluetooth_more_cmd = "blueberry"
 
 
 [appearance]
-scale_factor = 1.25
+scale_factor = 1.5
 style = "Solid"
 font = "Hack Nerd Font"
 

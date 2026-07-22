@@ -8,7 +8,7 @@ set -gx EDITOR hx
 set -gx VISUAL hx
 
 # Load private local keys
-if test -f (status dirname)/config.local.fish)
+if test -f (status dirname)/config.local.fish
     source (status dirname)/config.local.fish
 end
 

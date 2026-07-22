@@ -76,42 +76,45 @@ input {
 // Remember to uncomment the node by removing "/-"!
 output "eDP-1" {
     mode "2880x1800@90.00"
-    scale 2.0
+    scale 1.5
     position x=0 y=0
 }
 
 output "desc:Apple Computer Inc LED Cinema W832303T6JL" {
     mode "2569x1440@59.951"
     scale 1.0
-    // Position calculated as: eDP width (2880) / scale (2.0) = 1440
-    position x=1440 y=0
+    position x=1920 y=0
 }
 
 output "desc:PNP(GWD) ARZOPA 000000000000" {
     mode "1920x1080@60.000"
     scale 1.0   
-    // Position calculated as: eDP width (2880) / scale (2.0) = 1440
-    position x=1440 y=0
+    position x=1920 y=0
     
 }
 
 
 output "desc:Xiaomi Corporation Mi Monitor" {
-    // External Ultrawide monitor
-    mode "3440x1440@50.00"
+    mode "3440x1920@50.00"
     scale 1.0
     
-    // Position calculated as: eDP width (2880) / scale (2.0) = 1440
-    position x=1440 y=0
+    position x=1920 y=0
 }
 
 output "PNP(GWD) ARZOPA 000000000000" {
     mode "1920x1080@60.000"
     scale 1.0   
-    // Position calculated as: eDP width (2880) / scale (2.0) = 1440
-    position x=1440 y=0
+    position x=1920 y=0
     
 }
+
+output "LG Electronics LG ULTRAFINE 312NTYTAS666" {
+    mode "3840x2160@60.000"
+    scale 1.0
+    position x=1920 y=0
+}
+
+
 // Settings that influence how windows are positioned and sized.
 // Find more information on the wiki:
 // https://yalter.github.io/niri/Configuration:-Layout
