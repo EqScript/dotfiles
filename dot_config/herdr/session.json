@@ -1,0 +1,166 @@
+{
+  "version": 3,
+  "workspaces": [
+    {
+      "id": "w4",
+      "custom_name": "Shell",
+      "identity_cwd": "/home/sergio/Codework/heix-miniport",
+      "public_pane_numbers": {
+        "2": 3,
+        "1": 2
+      },
+      "next_public_pane_number": 4,
+      "public_tab_numbers": [
+        2,
+        3
+      ],
+      "next_public_tab_number": 4,
+      "tabs": [
+        {
+          "custom_name": "SHELL",
+          "layout": {
+            "Pane": 1
+          },
+          "panes": {
+            "1": {
+              "cwd": "/home/sergio/Codework/heix-miniport"
+            }
+          },
+          "zoomed": false,
+          "focused": 1,
+          "root_pane": 1
+        },
+        {
+          "custom_name": "SHELL2",
+          "layout": {
+            "Pane": 2
+          },
+          "panes": {
+            "2": {
+              "cwd": "/home/sergio/Codework/heix-miniport/webapp"
+            }
+          },
+          "zoomed": false,
+          "focused": 2,
+          "root_pane": 2
+        }
+      ],
+      "active_tab": 0
+    },
+    {
+      "id": "w5",
+      "custom_name": "MiniPort",
+      "identity_cwd": "/home/sergio/Yandex.Disk/Marinework/Projects/Cantera/Cantera_Model/Drawings/Bimini/Renders",
+      "public_pane_numbers": {
+        "3": 1,
+        "5": 12,
+        "4": 2
+      },
+      "next_public_pane_number": 13,
+      "public_tab_numbers": [
+        1,
+        2,
+        4
+      ],
+      "next_public_tab_number": 5,
+      "tabs": [
+        {
+          "custom_name": "MINIPORT",
+          "layout": {
+            "Pane": 3
+          },
+          "panes": {
+            "3": {
+              "cwd": "/home/sergio/Yandex.Disk/Marinework/Projects/Cantera/Cantera_Model/Drawings/Bimini/Renders",
+              "label": "MiniPort S3 - WebApp Slint OTA"
+            }
+          },
+          "zoomed": false,
+          "focused": 3,
+          "root_pane": 3
+        },
+        {
+          "custom_name": "OPENCODE",
+          "layout": {
+            "Pane": 4
+          },
+          "panes": {
+            "4": {
+              "cwd": "/home/sergio/Codework/heix-miniport",
+              "label": "WebApp - DC Continue"
+            }
+          },
+          "zoomed": false,
+          "focused": 4,
+          "root_pane": 4
+        },
+        {
+          "custom_name": "TIO",
+          "layout": {
+            "Pane": 5
+          },
+          "panes": {
+            "5": {
+              "cwd": "/home/sergio/Codework/heix-miniport"
+            }
+          },
+          "zoomed": false,
+          "focused": 5,
+          "root_pane": 5
+        }
+      ],
+      "active_tab": 2
+    },
+    {
+      "id": "w6",
+      "custom_name": "PHV-Bot/Docean",
+      "identity_cwd": "/home/sergio/Codework/heix-miniport/webapp",
+      "public_pane_numbers": {
+        "6": 1,
+        "7": 2
+      },
+      "next_public_pane_number": 3,
+      "public_tab_numbers": [
+        1,
+        2
+      ],
+      "next_public_tab_number": 3,
+      "tabs": [
+        {
+          "custom_name": "MP-WEBAPP",
+          "layout": {
+            "Pane": 6
+          },
+          "panes": {
+            "6": {
+              "cwd": "/home/sergio/Codework/heix-miniport/webapp"
+            }
+          },
+          "zoomed": false,
+          "focused": 6,
+          "root_pane": 6
+        },
+        {
+          "custom_name": "DOCEAN",
+          "layout": {
+            "Pane": 7
+          },
+          "panes": {
+            "7": {
+              "cwd": "/home/sergio/Codework/heix-miniport"
+            }
+          },
+          "zoomed": false,
+          "focused": 7,
+          "root_pane": 7
+        }
+      ],
+      "active_tab": 0
+    }
+  ],
+  "active": 1,
+  "selected": 1,
+  "sidebar_width": 28,
+  "sidebar_section_split": 0.5,
+  "collapsed_space_keys": []
+}
