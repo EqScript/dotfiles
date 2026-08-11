@@ -4,6 +4,7 @@ abbr -a -- gp 'git push'
 abbr -a -- gsw 'git switch'
 abbr -a -- zz 'z ..'
 abbr -a -- cl clear
+abbr -a -- rm trash
 abbr -a -- abdump 'abbr > $HOME/.config/fish/conf.d/abbrs.fish'
 abbr -a -- sus 'systemctl suspend'
 abbr -a -- chapply 'chezmoi apply'
@@ -21,4 +22,4 @@ abbr -a -- disk yandex-disk
 abbr -a -- nmrescan 'nmcli device wifi rescan'
 abbr -a -- nmlist 'nmcli device wifi list'
 abbr -a -- zload 'zellij --layout /home/sergio/.config/zellij/my-workspace.kdl'
-abbr -a -- gputop 'amdgpu_top'
+abbr -a -- gputop amdgpu_top
