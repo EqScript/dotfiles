@@ -1,0 +1,57 @@
+# ==================================================
+# Helix 4-Space Indentation Rules (Complete Schema)
+# ==================================================
+
+[[language]]
+name = "c"
+scope = "source.c"
+file-types = ["c"]
+indent = { tab-width = 4, unit = "    " }
+
+[[language]]
+name = "cpp"
+scope = "source.cpp"
+file-types = ["cc", "hh", "c++", "cpp", "hpp", "h", "ipp", "tpp", "cxx", "hxx", "ixx", "txx", "ino"]
+indent = { tab-width = 4, unit = "    " }
+
+[[language]]
+name = "python"
+scope = "source.python"
+file-types = ["py", "pyi", "py3", "pyw", "ptl", "rpy", "cpy", "ipy", "pyt"]
+indent = { tab-width = 4, unit = "    " }
+
+[[language]]
+name = "html"
+scope = "text.html"
+file-types = ["html", "htm", "shtml", "xhtml"]
+indent = { tab-width = 4, unit = "    " }
+
+[[language]]
+name = "css"
+scope = "source.css"
+file-types = ["css"]
+indent = { tab-width = 4, unit = "    " }
+
+[[language]]
+name = "rust"
+scope = "source.rust"
+file-types = ["rs"]
+indent = { tab-width = 4, unit = "    " }
+
+[[language]]
+name = "bash"
+scope = "source.bash"
+file-types = ["sh", "bash", "zsh", ".bashrc", ".zshrc"]
+indent = { tab-width = 4, unit = "    " }
+
+[[language]]
+name = "config"
+scope = "source.ini"
+file-types = ["ini", "conf", "gitconfig"]
+indent = { tab-width = 4, unit = "    " }
+
+[[language]]
+name = "toml"
+scope = "source.toml"
+file-types = ["toml"]
+indent = { tab-width = 4, unit = "    " }
