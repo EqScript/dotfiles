@@ -11,3 +11,44 @@ select = "underline"
 
 [editor.file-picker]
 hidden = false
+
+# ==========================================
+# Helix 4-Space Indentation Rules Configuration
+# ==========================================
+
+[[language]]
+name = "c"
+indent = { tab-width = 4, unit = "    " }
+
+[[language]]
+name = "cpp"
+indent = { tab-width = 4, unit = "    " }
+
+[[language]]
+name = "python"
+indent = { tab-width = 4, unit = "    " }
+
+[[language]]
+name = "html"
+indent = { tab-width = 4, unit = "    " }
+
+[[language]]
+name = "css"
+indent = { tab-width = 4, unit = "    " }
+
+[[language]]
+name = "rust"
+indent = { tab-width = 4, unit = "    " }
+
+[[language]]
+name = "bash"
+indent = { tab-width = 4, unit = "    " }
+
+# Covers standard configuration files like .ini, .conf, etc.
+[[language]]
+name = "config"
+indent = { tab-width = 4, unit = "    " }
+
+[[language]]
+name = "toml"
+indent = { tab-width = 4, unit = "    " }

@@ -4,10 +4,10 @@
     {
       "id": "w4",
       "custom_name": "Shell",
-      "identity_cwd": "/home/sergio/Codework/heix-miniport",
+      "identity_cwd": "/home/sergio/Videowork/Renders",
       "public_pane_numbers": {
-        "2": 3,
-        "1": 2
+        "1": 2,
+        "2": 3
       },
       "next_public_pane_number": 4,
       "public_tab_numbers": [
@@ -23,7 +23,7 @@
           },
           "panes": {
             "1": {
-              "cwd": "/home/sergio/Codework/heix-miniport"
+              "cwd": "/home/sergio/Videowork/Renders"
             }
           },
           "zoomed": false,
@@ -31,7 +31,7 @@
           "root_pane": 1
         },
         {
-          "custom_name": "SHELL2",
+          "custom_name": "DX-SERVER",
           "layout": {
             "Pane": 2
           },
@@ -50,11 +50,11 @@
     {
       "id": "w5",
       "custom_name": "MiniPort",
-      "identity_cwd": "/home/sergio/Yandex.Disk/Marinework/Projects/Cantera/Cantera_Model/Drawings/Bimini/Renders",
+      "identity_cwd": "/home/sergio/Codework/heix-miniport/webapp",
       "public_pane_numbers": {
         "3": 1,
-        "5": 12,
-        "4": 2
+        "4": 2,
+        "5": 12
       },
       "next_public_pane_number": 13,
       "public_tab_numbers": [
@@ -71,7 +71,7 @@
           },
           "panes": {
             "3": {
-              "cwd": "/home/sergio/Yandex.Disk/Marinework/Projects/Cantera/Cantera_Model/Drawings/Bimini/Renders",
+              "cwd": "/home/sergio/Codework/heix-miniport/webapp",
               "label": "MiniPort S3 - WebApp Slint OTA"
             }
           },
@@ -86,7 +86,7 @@
           },
           "panes": {
             "4": {
-              "cwd": "/home/sergio/Codework/heix-miniport",
+              "cwd": "/home/sergio/Codework/heix-miniport/webapp",
               "label": "WebApp - DC Continue"
             }
           },
@@ -109,15 +109,15 @@
           "root_pane": 5
         }
       ],
-      "active_tab": 2
+      "active_tab": 0
     },
     {
       "id": "w6",
       "custom_name": "PHV-Bot/Docean",
-      "identity_cwd": "/home/sergio/Codework/heix-miniport/webapp",
+      "identity_cwd": "/home/sergio/Codework/phv-bot",
       "public_pane_numbers": {
-        "6": 1,
-        "7": 2
+        "7": 2,
+        "6": 1
       },
       "next_public_pane_number": 3,
       "public_tab_numbers": [
@@ -133,7 +133,7 @@
           },
           "panes": {
             "6": {
-              "cwd": "/home/sergio/Codework/heix-miniport/webapp"
+              "cwd": "/home/sergio/Codework/phv-bot"
             }
           },
           "zoomed": false,
@@ -155,7 +155,7 @@
           "root_pane": 7
         }
       ],
-      "active_tab": 0
+      "active_tab": 1
     }
   ],
   "active": 1,
