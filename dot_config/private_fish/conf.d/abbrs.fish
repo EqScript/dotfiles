@@ -23,3 +23,4 @@ abbr -a -- nmrescan 'nmcli device wifi rescan'
 abbr -a -- nmlist 'nmcli device wifi list'
 abbr -a -- zload 'zellij --layout /home/sergio/.config/zellij/my-workspace.kdl'
 abbr -a -- gputop amdgpu_top
+abbr -a -- urp 'uv run python'

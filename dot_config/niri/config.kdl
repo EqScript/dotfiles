@@ -80,37 +80,29 @@ output "eDP-1" {
     position x=0 y=0
 }
 
-output "desc:Apple Computer Inc LED Cinema W832303T6JL" {
+output "Apple Computer Inc LED Cinema W832303T6JL" {
     mode "2569x1440@59.951"
     scale 1.0
     position x=1920 y=0
 }
 
-output "desc:PNP(GWD) ARZOPA 000000000000" {
+output "PNP(GWD) ARZOPA 000000000000" {
     mode "1920x1080@60.000"
-    scale 1.0   
+    scale 0.8   
     position x=1920 y=0
     
 }
 
-
-output "desc:Xiaomi Corporation Mi Monitor" {
+output "Xiaomi Corporation Mi Monitor" {
     mode "3440x1920@50.00"
     scale 1.0
     
     position x=1920 y=0
 }
 
-output "PNP(GWD) ARZOPA 000000000000" {
-    mode "1920x1080@60.000"
-    scale 1.0   
-    position x=1920 y=0
-    
-}
-
 output "LG Electronics LG ULTRAFINE 312NTYTAS666" {
     mode "3840x2160@60.000"
-    scale 1.0
+    scale 1.5
     position x=1920 y=0
 }
 
@@ -276,14 +268,14 @@ layout {
 // which may be more convenient to use.
 // See the binds section below for more spawn examples.
 
-spawn-at-startup "ashell"
+// spawn-at-startup "noctalia" // - now exec as a --user systemd service
 // Random Walpaper
 // Starting core services
 spawn-at-startup "swaync"
 spawn-at-startup "xwayland-satellite"
 spawn-at-startup "/usr/libexec/hyprpolkitagent"
 spawn-at-startup "hypridle"
-spawn-at-startup "sh" "-c" "swaybg -m fill -i /home/sergio/.config/wallpapers/black.jpg"
+spawn-at-startup "sh" "-c" "swaybg -m fill -i /home/sergio/.config/wallpapers/os-x-tiger-aqua-5120x2880-24046.jpg"
 
 // To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
 // spawn-sh-at-startup "qs -c ~/source/qs/MyAwesomeShell"
@@ -647,6 +639,9 @@ binds {
     // The quit action will show a confirmation dialog to avoid accidental exits.
     Mod+Shift+E { quit; }
     Ctrl+Alt+Delete { quit; }
+
+    // Noctalia Power/Lock/Shutdown Panel
+    Mod+S { spawn "noctalia" "msg" "panel-toggle" "session"; }
 
     // Powers off the monitors. To turn them back on, do any input like
     // moving the mouse or pressing any other key.
